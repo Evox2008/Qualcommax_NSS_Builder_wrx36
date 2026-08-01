@@ -18,7 +18,7 @@ permissions:
 jobs:
   actionlint:
     name: actionlint
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@v7
@@ -31,7 +31,7 @@ jobs:
 
   shellcheck:
     name: shellcheck
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@v7
@@ -44,7 +44,7 @@ jobs:
 
   yamllint:
     name: yamllint
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@v7
@@ -58,7 +58,7 @@ jobs:
 
   prune-tests:
     name: prune-releases tests
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@v7
